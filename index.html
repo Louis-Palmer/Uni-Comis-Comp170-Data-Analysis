@@ -1,0 +1,346 @@
+<!doctype html5>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Finding ideal countries to adopt hospital bed sensors</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <!-- TOC START -->
+  <div class="Toc-Bar">
+        <nav class="TOC">
+          <h1 class="TOC TITLE">Table Of Contents</h1>
+          <ul>
+            <li><a href="#Abstract">Abstract</a></li>
+            <li><a href="#Introduction">Introduction</a></li>
+            <li><a href="#Literature Review-1">Literature Review</a>
+              <ul>
+                <li><a href="#LitSub-1.1">Brief Introduction</a></li>
+                <li><a href="#LitSub-1.2">Healthcare systems rating</a></li>
+                <li><a href="#LitSub-1.3">Per Capita Expenditure</a></li>
+                <li><a href="#LitSub-1.4">Comparison</a></li>
+                <li><a href="#LitSub-1.5">Healthcare Innovation</a></li>
+                <li><a href="#LitSub-1.6">Hypothesis</a></li>
+              </ul>
+            </li>
+            <li><a href="#Methodology">Methodology</a>
+              <ul>
+                <li><a href="#MSub-1.1">Data Source</a></li>
+                <li><a href="#MSub-1.2">Acute beds Europe</a></li>
+                <li><a href="#MSub-1.3">ICU beds Germany</a></li>
+                <li><a href="#MSub-1.4">Heatmaps</a></li>
+                <li><a href="#MSub-1.5">Heatmaps Issues</a></li>
+              </ul>
+            </li>
+            <li><a href="#Res-1">Results</a>
+              <ul>
+                <li><a href="#Res-1.1">Main results</a></li>
+                <li><a href="#Res-1.2">Secondary results</a></li>
+                <li><a href="#Res-1.3">Unreliability</a></li>
+              </ul>
+            </li>
+            <li><a href="#Dis-1">Discussion</a>
+              <ul>
+                <li><a href="#Dis-1.1">Patterns</a></li>
+                <li><a href="#Dis-1.2">Unreliability</a></li>
+              </ul>
+            </li>
+            <li><a href="#Con-1">Conclusion</a>
+              <ul>
+                <li><a href="#Con-1.1">Key Points</a></li>
+                <li><a href="#Dis-1.2">Comparing hypothesis</a></li>
+              </ul>
+            </li>
+            <li><a href="#Rec-1">Recommendation</a>
+              <ul>
+                <li><a href="#Rec-1.1">Main</a></li>
+                <li><a href="#Rec-1.2">Reasons</a></li>
+              </ul>
+            </li>
+            <li><a href="#References">References</a></li>
+            <li><a href="#Appendix">Appendices</a></li>
+          </ul>
+        </nav>
+
+        <a href="#top" id="back-to-top">Back to top</a>
+  </div>
+  <!--TOC END-->
+
+
+
+  <div class="Body-Box">
+    <body>
+      <div id="top"></div>
+      <script> src="Back To Top button.js"</script>
+  
+      <!--Title Starts Here-->
+      <header>Finding ideal countries to adopt hospital bed sensors</header>
+  
+  
+      <!--Abstract Starts-->
+  
+      <div id = "Abstract" class="Segments-Top">
+        <h1 id="Abstract">Abstract:</h1>
+        <p>
+          This Study aims to answer <a href="https://attensys.io">Attensys.io's</a> question: "Which countries would be most successful in the healthcare industry for Attensys.io's bed sensors?" The study uses data on bed counts per 1000 people to determine the best places for the sensors. The results showed further research is required, however it is narrowed to a few countries being Germany, Belarus, South Korea, North Korea, and Japan. These results differ slightly from my hypothesis.
+        </p>
+      </div>
+  
+      <!--Introduction Start-->
+      <div id="Introduction" class="Segments">
+        <H1 id="Introduction">Introduction:</H1>
+        <p>
+          <a href="https://attensys.io">Attensys.io</a> are a company that are developing sensors in train seats, they considering expanding into the healthcare industry with sensors in hospital beds. The bed sensors can sense weight and moisture. I have been tasked with identifying which countries would be most successful for <a href="https://attensys.io">Attensys.io</a>. I will collect data on the number of hospital beds for each country, focusing on the main two types of hospital beds; curative care (acute) and intensive care (ICU). Using this data, I will identify the places with the highest number of beds per 1000 people.
+        </p>
+      </div>
+  
+      <!--Lit Review Start-->
+  
+      <div id="Literature Review-1" class="Segments">
+        <H1 id="Literature Review-1">Literature Review</H1>
+        <h2 id="LitSub-1.1">Brief Introduction</h2>
+        <p>
+          Sensors will be a key part in the healthcare industry for example, <a href="https://attensys.io">Attensys.io</a> sensors can track data on length of bed stay and bed capacity. ”The ability to predict hospital bed capacity for different types of wards is essential for monitoring and planning purposes during epidemics”-<a href="https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-021-06492-3">[1]</a>. They are also predicted to grow in popularity "The sensor market will exceed trillion sensors per year soon."-<a href="https://link.springer.com/chapter/10.1007/978-3-030-10752-9_10">[2]</a>.
+        </p>
+        <h2 id="LitSub-1.2">Healthcare systems rating</h2>
+        <p>
+          I could not find direct information about the use of sensors in hospital beds. Instead, I looked at a healthcare system ranking provided by <a href ="https://www.numbeo.com/health-care/rankings_by_country.jsp?title=2023">Numbeo [3]</a>, seen in <a href="#Fig_1">Figure 1</a></li>. This is a worldwide ranking of countries based on surveys that “consider factors that contribute to overall health”- <a href = "https://ceoworld.biz/2021/04/27/revealed-countries-with-the-best-health-care-systems-2021/">[4]</a>. The top 5 countries on this ranking, from the 1st to the 5th are as follows: Taiwan, South Korea, Japan, France, and Denmark.
+        </p>
+        <figure id="Fig_1">
+          <img class="larger" src="Images\3.Others\Health Care Index by Country 2023.png" alt="Figure 1 HealthCare Index Source. NUMBEO">
+          <figcaption>Figure 1 Health Care Index by country 2023. Source NUMBEO-<a href="https://www.numbeo.com/health-care/rankings_by_country.jsp?title=2023">[3]</a></figcaption>
+        </figure>
+    
+        <h2 id="LitSub-1.3">Per Capita Expenditure</h2>
+        <p>
+          I also looked at per capita healthcare expenditure. The top 5 countries according to Statista <a href="https://www.statista.com/statistics/236541/per-capita-health-expenditure-by-country/#:~:text=In%202021%2C%20the%20United%20States,highest%20per%20capita%20health%20expenditure">[5]</a> from the 1st to the 5th are as follows: United States, Germany, Switzerland, Norway, and Netherlands.
+        </p>
+    
+        <figure id ="fig_2">
+          <img class="larger" src="Images\3.Others\Expenditure Stats.png" alt="Figure 2 Expenditure Statistics 2021. Source Statista">
+          <figcaption>Figure 2 Expenditure Statistics 2021. Per Capita expenditure in USD. Source Statista-<a href="https://www.statista.com/statistics/236541/per-capita-health-expenditure-by-country/#:~:text=In%202021%2C%20the%20United%20States,highest%20per%20capita%20health%20expenditure">[5]</a></figcaption>
+        </figure>
+        
+        <h2 id="LitSub-1.4">Comparison</h2>
+        <p>
+          Comparing the healthcare system ratings and the expenditure, none of the mentioned countries appear to be ranked within the top 5 in either of the lists. Going further down the list, the first to appear on both lists is Denmark, which ranks 5th in healthcare rating and 7th in healthcare expenditure. Upon comparing these stats, we can see that the European Union tends to have higher expenditure for healthcare (compared to the average), apart from the United States. Asia also tends to have higher healthcare ratings compared to the average.
+        </p>
+        <h2 id="LitSub-1.5">Healthcare Innovation</h2>
+        <p>
+          Another statistic worth considering is healthcare innovation. According to, The FREOPP World Index of Healthcare Innovation-<a href="https://freopp.org/key-findings-from-the-freopp-world-index-of-healthcare-innovation-cda78938c047">[6]</a>, Switzerland is ranked 1st for healthcare innovation, followed by the Netherlands, Germany, Ireland, and Israel. It is likely that these countries are more open to new medical technology.
+        </p>
+    
+        <figure id = "fig_3">
+          <img class="larger" src="Images\3.Others\World Index of Healthcare Innovation.png" alt="Figure 3 World Index of Healthcare Innovation. Source FREOPP">
+          <figcaption>Figure 3 World Index of Healthcare Innovation. Source FREOPP-<a href="https://freopp.org/key-findings-from-the-freopp-world-index-of-healthcare-innovation-cda78938c047">[6]</a></figcaption>
+        </figure>
+    
+        <h2 id="LitSub-1.6">Hypothesis</h2>
+        <p>
+          My hypothesis is that Denmark, the Netherlands, and the United States will be the most likely countries where Attensys.io will find success. I choose these because they have high ratings in all 3 of the above categories. Other potential clients are Switzerland and Germany, which both score exceptionally high in expenditure.  In Asia, Taiwan, South Korea, and Japan all have some of the highest rankings in healthcare rating. I could see them adopting the sensors after successful implementation in other countries.
+        </p>
+      </div>
+  
+  
+      <!-- Methdology Start-->
+      <div id="Methodology" class="Segments">
+        <h1 id="Methodology">Methodology</h1>
+        <h2 id="MSub-1.1">Data Source</h2>
+        <p>
+          My main source of data was through Kaggle, I obtained a dataset named 'Global Hospital Beds Capacity (for COVID-19)' <a href="https://www.kaggle.com/datasets/ikiulian/global-hospital-beds-capacity-for-covid19">[7]</a> This contained multiple datasets, with hospital bed capacities for all countries. I was not able to find any other datasets related to this specific category. Therefore, I decided that obtaining the quantity of the hospital beds and types, would be the most beneficial.
+        </p>
+    
+        <h2 id="MSub-1.2">Acute beds Europe</h2>
+        <figure class="barsmall" id="Fig_4">
+          <img src="Images\1.Bar Charts\Europe_Acute_2017_ordered_Final.png" alt="Figure 4 Bar Chart ACUTE beds Europe 2017" width="80%" length="80%">
+          <figcaption>Figure 4 Bar Chart ACUTE beds Europe 2017. Data sourced-<a href="https://www.kaggle.com/datasets/ikiulian/global-hospital-beds-capacity-for-covid19">[7]</a></figcaption>
+        </figure>
+        <p>
+          This bar chart, <a href ="#Fig_4">Figure 4</a>, shows the number of acute hospital beds per 1000 people, for each country in the EU in 2017. Bulgaria is rated first with 6.1 acute beds per 1000 people, followed by Germany with 6 acute beds. Lithuania is third in line with 5.5 acute beds. I decided a bar chart would be the best representation for this data, as the entries are for EU countries only and not globally. The range of the stats were not spread out either.  
+        </p>
+    
+        <h2 id="MSub-1.3">ICU beds Germany</h2>
+        <figure class="barsmall">
+          <img src="Images\1.Bar Charts\Germany_ICU_2017.png" alt="Figure 5 Bar Chart ICU beds Germany 2017" width="80%" length="80%">
+          <figcaption>Figure 5 Bar Chart ICU beds Germany 2017.Data sourced-<a href="https://www.kaggle.com/datasets/ikiulian/global-hospital-beds-capacity-for-covid19">[7]</a></figcaption>
+        </figure>
+        <p>
+          This chart shows ICU beds per 1000 for each state in Germany. This shows ICU beds are relatively scarce compared to acute beds. Despite Germany being second in Europe for acute beds, Germany only has an average of 0.43 ICU beds, which is nearly 12 times less than its acute beds. Even in Berlin, Germany, there are only 0.76 ICU beds, which is almost 8 times less than its acute beds. This gives us more insight into which geographical locations are best to target in the chosen countries. The capitals being the most likely places, as they tend to have higher bed counts compared to the rest of the country. For this report we will be focusing on countries, not specific states, or cities within them.
+        </p>
+        
+        <!--Code Snippet 1 HERE-->
+    
+        <figure id="Fig-C1">
+          <figcaption>Code Snippet-<a href="https://github.falmouth.ac.uk/Games-Academy-Student-Work-22-23/Comp170-2206106-1.git">[9]</a></figcaption>
+          <pre class="Codes">
+            def main():
+              font1= {'family':'sans-serif','color':'Black','size':30}#creates a font style.
+              font2 ={'family':'sans-serif','color':'Black','size':20}#same as above.
+              sns.set_palette(sns.color_palette("dark")) #Changes the colour
+              frame = pd.read_csv("Data Research\CSV\Hospital Beds\Germany ICU 2017.csv") #Reads the Data from the csv and stores it as frame variable.
+              newFrame = frame.sort_values(by = "beds",ascending=False) #sorts through the data into descending order of bed count and sotres it a newframe
+              plt.rcParams["figure.figsize"] = [50, 50] #changes size of barchart
+              plt.rcParams["figure.autolayout"] = True #automaticly adjusts the layout
+              plottedData = sns.barplot(data=newFrame,x="state",y="beds").get_figure() #creates the bar chart using the sorted data
+              plt.title("ICU Hospital beds for Germany 2017",fontdict=font1)
+              plt.xlabel("States",fontdict=font2)
+              plt.ylabel("Beds",fontdict=font2)
+              plottedData.savefig(dir_path+"\Data Research\Images\Europe Acute 2017\ICU Germany titled") #saves the barchart automaticly.
+              plt.show() #displays the barchart during execution.
+          </pre>
+        </figure>
+
+    
+    
+    
+    
+    
+        <h2 id="MSub-1.4">Heatmaps</h2>
+        <p>
+          When I generated the Data for each country as a bar chart, the chart was incredibly long and nearly impossible to read, as it was so crammed. I found a heatmap is the best way to present data for each country. 
+        </p>
+    
+        <figure id="Fig-6">
+          <img class="small"src="Images\2.Heatmaps\Heatmap Total Beds Global Black.png" alt="Figure 6 Heatmap Total beds Global Black">
+          <figcaption>Figure 6 Heatmap Total beds Black. Data and map sourced-<a href="https://www.kaggle.com/datasets/ikiulian/global-hospital-beds-capacity-for-covid19">[7]</a> and <a href="https://hub.arcgis.com/datasets/esri::world-countries-generalized/explore?location=-0.750131%2C0.000000%2C2.64">[8]</a></figcaption>
+        </figure>
+        <p>
+          <a href="#Fig-6">Figure 6</a>, is a greyscale heatmap showing the total of beds across multiple countries, using data from multiple years, prioritizing the most recent years. Visualizing data as a heatmap allows us to recognize patterns and areas, instead of just looking at countries individually. The data shows the EU has the highest average bed count compared to other places, with a few exceptions like South Korea, North Korea, Russia, and Japan. 
+        </p>
+    
+        <h2 id="MSub-1.5">Heatmap Issues</h2>
+        <p>
+          A few issues with this heatmap are for example, data for Namibia and South Sudan are null, being displayed as being blank/white. To make this more noticeable I changed the colour scheme.
+        </p>
+        <figure>
+          <img class="small" src="Images\2.Heatmaps\Heatmap Total Beds Global Rainbow.png" alt="Figure 7 Heatmap Total beds Global  Rainbow">
+          <figcaption>Figure 7 Heatmap Rainbow. Data and map sourced-<a href="https://www.kaggle.com/datasets/ikiulian/global-hospital-beds-capacity-for-covid19">[7]</a> and <a href="https://hub.arcgis.com/datasets/esri::world-countries-generalized/explore?location=-0.750131%2C0.000000%2C2.64">[8]</a></figcaption>
+        </figure>
+    
+        <figure>
+          <img class="small" src="Images\2.Heatmaps\Heatmap Total Beds Global Red.png" alt="Figure 8 Heatmap Total beds Global Red">
+          <figcaption>Figure 8 Heatmap Red. Data and map sourced-<a href="https://www.kaggle.com/datasets/ikiulian/global-hospital-beds-capacity-for-covid19">[7]</a> and <a href="https://hub.arcgis.com/datasets/esri::world-countries-generalized/explore?location=-0.750131%2C0.000000%2C2.64">[8]</a></figcaption>
+        </figure>
+        
+        <!--Code Snippet 2 here-->
+        <figure>  
+          <figcaption>Code Snippet-<a href="https://github.falmouth.ac.uk/Games-Academy-Student-Work-22-23/Comp170-2206106-1.git">[9]</a> </figcaption>
+          <pre class="Codes">
+            def HeatMap():
+              worldmap = gpd.read_file(dir_path+"\Data\World map SHP Data\World_Countries__Generalized_.shp")#reads the shapefile (a Map) of the world.
+              dataframe = pd.read_csv(dir_path+"\Data\CSV\Hospital Beds\Global_Total.csv")#reads the dataset.
+              font1= {'family':'sans-serif','color':'Black','size':30}#creates a font style.
+              font2 ={'family':'sans-serif','color':'Black','size':20}#same as above.
+              print("worldsmap",worldmap.columns) # prints the names of the collums.
+              print("Dataframe",dataframe.columns)# this is because The collum that contains the iso codes needs to be the same name.
+              map_and_stats=worldmap.merge(dataframe, on="ISO") #merges the dataset and the map using the iso codes.
+              fig, ax = plt.subplots(1, figsize=(40, 40)) #sets the size of the heatmap.
+              map_and_stats.plot(column="beds", cmap="binary", linewidth=0.4, ax=ax, edgecolor=".4",legend = True)#creates the heatmap and the bar on the rightside of the heatmap.
+              plt.xlabel("Latitude",fontdict=font2) #creates the label with the suing the fonts we created earlier.
+              plt.ylabel("Longitude",fontdict=font2)#same as above.
+              plt.title("Total Hospital Beds Per 1000 People",fontdict=font1) # creates a title with the font from above.
+
+              plt.savefig("C:\Users\louis\Comp170-2206106-1\Images\4.Extras\Heatmap\mightbe.png")#save the heatmap automaticly.
+              plt.show()#displays the heatmap after excecution.
+          </pre>
+        </figure>
+
+        </div>
+        
+  
+  
+      <!-- Results Start-->
+      <div id="Res-1" class="Segments">
+        <h1 id="Res-1">Results:</h1>
+        <h2 id="Res-1.1">Main Result</h2>
+        <p>
+          The data identified that Europe and Asia have the highest bed count. Europe had a consistent average, across most of the countries. Asia has few countries that are noticeable, being South Korea, North Korea, and Japan. In Europe, Belarus, Ukraine, Germany, and Russia (putting it in Europe due to similarities) are countries that stand out the most. This disproves my hypothesis where I thought Denmark, Netherlands, and the United States would be the main countries, but none of these countries stand out on my map. Even Denmark and the Netherlands, compared to the rest of Europe, don’t stand out, they have some of the fewest beds per 1000 people. The Unites States it was not very noticeable at all even with its physical size on the map which would influence noticeability. The only country that I mentioned in my hypothesis was Germany that stood out in Europe.
+        </p>
+        <h2 id="Res-1.2">Secondary Results</h2>
+        <p>
+          In Asia, the countries I discussed in my hypothesis were South Korea, Japan, and Taiwan. Comparing it to <a href ="#Fig-6">Figure 6</a>, South Korea and Japan with North Korea stood out extremely well having some of the highest bed counts and higher land mass. Taiwan was not as visible. So therefore, part of my hypothesis is inaccurate.  
+        </p>
+        <h2 id="Res-1.3">Unreliability</h2>
+        <p>
+          It is worth noting that the <a href="#Fig-6">Figure 6</a> results are across the span of multiple years, ranging from 1970-2019. For example, North Korea's data was recorded in 1970; it is worth considering ignoring North Korea, as a lot could have changed since then. It is important to keep this in mind and acknowledge further research is required.
+        </p>
+      </div>
+  
+  
+  
+      <!-- Discussion Start-->
+      <div  id="Dis-1" class="Segments"> 
+        <h1 id="Dis-1">Discussion:</h1>
+        <h2 id="Dis-1.1">Patterns</h2>
+        <p>
+          In Europe, a pattern was discovered, having a consistency and a higher-than-average-score for bed counts. While Asia’s average score for bed counts was lower overall, it had some of the highest for bed count countries being South Korea, North Korea, and Japan.
+        </p>
+        <h2 id="Dis-1.2">Unreliability</h2>
+        <p>
+          It is also worth noting that my analysis assumes that countries with higher bed counts are ideal places to target. This will most likely not be 100% reliable as sensors could have multiple different uses, being more effective elsewhere. Another argument is that places with lower bed counts would be better places to start for testing, this could also lead to gaining successful implementation mentioned in the hypothesis. Further research would be required.
+        </p>
+    
+      </div>
+  
+      <!--Conclusion Start-->
+      <div id="Con-1" class="Segments">
+        <h1 id="Con-1">Conclusion:</h1>
+        <h2 id="Con-1.1">Key Points</h2>
+        <p>
+          In Asia the countries, South Korea, North Korea, and Japan have the highest bed counts. In Europe most countries had an above average bed count, whilst also being more consistent with no anomalies.
+        </p>
+        <h2 id="Con-1.2">Comparing the Hypothesis</h2>
+        <p>
+          The results contrast with my hypothesis, which does not contain any of the countries that were major contenders in terms of bed count; apart from, South Korea, Japan, and Germany which appear in both the hypothesis and the results.
+        </p>
+      </div>
+  
+  
+      <!--Recommendation Start-->
+      <div id="Rec-1" class="Segments">
+        <h1 id="Rec-1">Recommendation</h1>
+        <h2 id="Rec-1.1">Main</h2>
+        <p>
+          For <a href ="https://attensys.io">Attensys.io</a>, I recommend further research to decide which countries to prioritize. However, based on my results, I would recommend narrowing down the research to 5 countries: Germany, Belarus, South Korea, North Korea, and Japan.
+        </p>
+        <h2 id="Rec-1.2">Reasons</h2>
+        <p>
+          Germany appears to be at the centre of the highly rated countries, in terms of healthcare innovation and healthcare systems, itself also being highly rated in both. In Europe, Belarus has the second highest in terms of bed count after Monaco. Overall, in terms of bed counts, South Korea and Japan were the highest globally and were also in the hypothesis. Despite geopolitical situation, North Korea also has a high bed count.
+        </p>
+      </div>
+  
+  
+  
+      <!--Refrences and Appendices-->
+  
+      <div id="References" class="Segments">
+        <h1  id="References">References</h1>
+        <p>[1]-<br> Mieke Deschepper et al. "Prediction of hospital bed capacity during the COVID−19 pandemic - BMC Health Services Research, BioMed Central," Springer Nature, 18 May 2021. [Online]. Available: <a href="https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-021-06492-3">https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-021-06492-3.</a> [Accessed 6 March 2023].</p>
+        <p>[2]-<br>G. . V. Angelov, D. P. Nikolakov, I. N. Ruskova, E. E. Gieva and M. L. Spasova , "Healthcare Sensing and Monitoring," in Enhanced Living Environments, Springer, 2019, pp. 226-262.<a href="https://link.springer.com/chapter/10.1007/978-3-030-10752-9_10">https://link.springer.com/chapter/10.1007/978-3-030-10752-9_10</a>[Accessed 04 March 2023]</p>
+        <p>[3]-<br> Numbeo, "Health Care Index By Country 2023," Numbeo, 2023. [Online]. Available: <a href ="https://www.numbeo.com/health-care/rankings_by_country.jsp?title=2023">https://www.numbeo.com/health-care/rankings_by_country.jsp?title=2023</a>. [Accessed 04 March 2023].</p>
+        <p>[4]-<br> S. Ireland, "Revealed: Countries With The Best Health Care Systems, 2021," CEOWORLD Magazone, 27 April 2021. [Online]. Available: <a href ="https://ceoworld.biz/2021/04/27/revealed-countries-with-the-best-health-care-systems-2021/">https://ceoworld.biz/2021/04/27/revealed-countries-with-the-best-health-care-systems-2021/. [Accessed 04 March 2023]</a>. [Accessed 04 March 2023].</p>
+        <p>[5]-<br>Statista research department, "Per capita health expenditure in selected countries in 2021," Statista, 14 Febuary 2023. [Online]. Available: ,<a href="https://www.statista.com/statistics/236541/per-capita-health-expenditure-by-country/#:~:text=In%202021%2C%20the%20United%20States,highest%20per%20capita%20health%20expenditure">https://www.statista.com/statistics/236541/per-capita-health-expenditure-by-country/#:~:text=In%202021%2C%20the%20United%20States,highest%20per%20capita%20health%20expenditure..</a> [Accessed 04 March 2023].</p>
+        <p>[6]-<br>A. Roy, "Key Findings from the 2021 FREOPP World Index of Healthcare Innovation," FREOPP.org, 25 June 2021. [Online]. Available: <a href="https://freopp.org/key-findings-from-the-freopp-world-index-of-healthcare-innovation-cda78938c047">https://freopp.org/key-findings-from-the-freopp-world-index-of-healthcare-innovation-cda78938c047.</a> [Accessed 04 March 2023].</p>
+    
+      </div>
+
+
+      <div id="Appendix" class="Segments">
+        <h1>Appendices</h1>
+        <p> Data Used is <br> [7]-<br>I. Kiulian, "Global Hospital Beds Capacity (for covid-19)," Kaggle, 26th April 2020. [Online]. Available: <a href="https://www.kaggle.com/datasets/ikiulian/global-hospital-beds-capacity-for-covid19">https://www.kaggle.com/datasets/ikiulian/global-hospital-beds-capacity-for-covid19.</a> [Accessed Febuary 2023].</p>
+        <p> Shapefile for data used is <br>[8]- <br> Esri Data and Maps, "World Countries(Generalized), ArcGIS Hub, 5th May 2020. [Online]. Available: <a href="https://hub.arcgis.com/datasets/esri::world-countries-generalized/explore?location=-0.750131%2C0.000000%2C2.64">https://hub.arcgis.com/datasets/esri::world-countries-generalized/explore?location=-0.750131%2C0.000000%2C2.64</a> [Accessed Febuary 2023].</p>
+        <p>Link To Github <br>[9]-<a href="https://github.falmouth.ac.uk/Games-Academy-Student-Work-22-23/Comp170-2206106-1.git">Github Link.</a> </p>
+
+      </p>
+
+      </div>
+  
+  
+      
+    </body>
+  </div>
+
+
+
+</html>

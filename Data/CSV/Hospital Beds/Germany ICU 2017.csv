@@ -1,0 +1,17 @@
+country,state,type,beds,population,year,source,source_url
+DE,BB,ICU,0.327568,,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,BE,ICU,0.76917,3769000,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,BW,ICU,0.294683,11069533,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,BY,ICU,0.309303,,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,HB,ICU,0.430463,682986,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,HE,ICU,0.294455,6265809,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,HH,ICU,0.43559,1841179,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,MV,ICU,0.629941,1609675,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,NI,ICU,0.424603,,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,NW,ICU,0.685677,17932651,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,RP,ICU,0.328776,4084844,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,SH,ICU,0.299305,2896712,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,SL,ICU,0.553251,990509,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,SN,ICU,0.455868,4077937,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,ST,ICU,0.407549,2208321,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
+DE,TH,ICU,0.340621,2143145,2017,kaggle,https://www.kaggle.com/manuelblechschmidt/icu-beds-in-germany
